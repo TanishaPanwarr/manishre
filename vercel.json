@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [{
-            "src": "tanuresume/wsgi.py",
+            "src": "manishresumee/wsgi.py",
             "use": "@vercel/python",
             "config": { "maxLambdaSize": "50mb", "runtime": "python3.9" }
         },
@@ -19,7 +19,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "tanuresume/wsgi.py"
+            "dest": "manisharesumee/wsgi.py"
         }
     ]
 }
