@@ -19,7 +19,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "manisharesumee/wsgi.py"
+            "dest": "manishresumee/wsgi.py"
         }
     ]
 }
