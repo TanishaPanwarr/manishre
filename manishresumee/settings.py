@@ -87,6 +87,15 @@ DATABASES = {
         'HOST':'localhost',
         'USER':'postgres',
         'PASSWORD':'tani',
+        'listen_addresses':'*',          # what IP address(es) to listen on;
+                                        # comma-separated list of addresses;
+                                        # defaults to 'localhost'; use '*' for >
+                                        # (change requires restart)
+        'port':'5432',                             # (change requires restart)
+        'max_connections':'100'                   # (change requires restart)
+#superuser_reserved_connections = 3     # (change requires restart)
+#unix_socket_directories = '/var/run/postgresql'        # comma-separated list >
+                                        # (change requires restart)
     }
 }
 
