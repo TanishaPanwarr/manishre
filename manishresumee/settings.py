@@ -80,15 +80,13 @@ WSGI_APPLICATION = 'manishresumee.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
 DATABASES = {
-    'default': {
+        'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'railway',
-        'HOST':'containers-us-west-20.railway.app',
+        'NAME':'manish',
+        'HOST':'localhost',
         'USER':'postgres',
-        'PASSWORD':'bAqgA5vL2b5hbQE1Ewud',
-        'PORT':'5954',
+        'PASSWORD':'tani',
     }
 }
 

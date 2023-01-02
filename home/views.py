@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib import messages
-#from tanuresume.settings import EMAIL_HOST_USER
+#from manishresumee.settings import EMAIL_HOST_USER
 def index(request):
     return render(request,'index.html')
 
@@ -23,7 +23,7 @@ def feedback(request):
         message = 'Hello i am Manish !! Hope you are well and I am a full-stack Web Developer with a passion for web application development. Dedicated to dirving innovation with the ability to follow industry and technological trends to acheive Organizational goals.'
         recepient = email
         recepient1 = name
-        send_mail(subject, message, EMAIL_HOST_USER, [recepient], [recepient1])
+        #send_mail(subject, message, EMAIL_HOST_USER, [recepient], [recepient1])
         return render(request, 'index.html', {'recepient': recepient})
     else:
         return render(request,'index.html')
