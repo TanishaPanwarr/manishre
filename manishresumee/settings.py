@@ -78,19 +78,20 @@ TEMPLATES = [
 WSGI_APPLICATION = 'manishresumee.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-if os.environ['ENVIRONMENT']=="manish":
-    DATABASES['default']= dj_database_url.config(conn_max_age=600)
-else:
-    DATABASES = {
+# Database# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+    
+DATABASES = {
         'default': {
-        'ENGINE': os.environ['ENGINE'],
-        'NAME':os.environ['NAME'],
-        'HOST':os.environ['HOST'],
-        'USER':os.environ['USER'],
-        'PASSWORD':os.environ['PASSWORD'],
-        'port':os.environ['PORT'],              
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME':'manish',
+        'HOST':'localhost',
+        'USER':'postgres',
+        'PASSWORD':'tani',
+        'listen_addresses':'*',      
+        'port':'5432',                            
+        'max_connections':'100'                   
+
     }
 }
 
